@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Submitted Cypress Pictures!</title>
+
+    <!-- Font Awesome Icons -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+    <!-- Google Font -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swamp" />
+
+    <!-- stylesheet -->
+
+    <link rel="stylesheet" href="upload-page.css" />
+
+    <nav>
+        <ul>
+            <li><a href="ancientCypressLoggingPhotos.html"> Ancient Cypress Logging Photos </a></li>
+            <li><a href="environmentalCleanup.html"> Environmental Clean-Ups </a></li>
+            <li><a href="onlyCypressTreeInformation.html">Cypress Tree Information</a></li>
+            <li><a href="cypresspics.html">My collection of Cypress Trees</a></li>
+            <li><a href="upload-page.html">User Submitted Pictures!</a></li>
+            <li><a href="index.html"> Home Page </a></li>
+        </ul>
+    </nav>
+</head>
+
+<body>
+    <img src="./cypresspics/IMG_8596.jpg"></a>
+
+    <div class="container">
+        <input type="file" id="upload-button" multiple accepts="image/*" />
+        <label for="upload-button"><i class="fa-solid fa-cloud-arrow-up"></i> Choose or Drop Photos</label>
+        <div id="error"></div>
+        <div id="image-display"></div>
+    </div>
+
+    <div class="main-paragraph">
+        <p>Please feel free to upload user submitted cypress tree pictures!</p>
+    </div>
+    <!-- script -->
+    <script src="drag-and-drop-file-upload.js"></script>
+</body>
+</html>
