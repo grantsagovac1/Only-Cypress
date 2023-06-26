@@ -12,12 +12,14 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <nav>
         <ul>
-            <li><a href="ancientCypressLoggingPhotos.html"> Ancient Cypress Logging Photos </a></li>
-            <li><a href="environmentalCleanup.html"> Environmental Clean-Ups </a></li>
-            <li><a href="onlyCypressTreeInformation.html">Cypress Tree Information</a></li>
-            <li><a href="cypresspics.html">My collection of Cypress Trees</a></li>
-            <li><a href="upload-page.html">User Submitted Pictures!</a></li>
-            <li><a href="index.html"> Home Page </a></li>
+            <ol>
+                <a href="ancientCypressLoggingPhotos.html"> Ancient Cypress Logging Photos </a>
+                <a href="environmentalCleanup.html"> Environmental Clean-Ups </a>
+                <a href="onlyCypressTreeInformation.html">Cypress Tree Information</a>
+                <a href="cypresspics.html">My collection of Cypress Trees</a>
+                <a href="upload-page.html">User Submitted Pictures!</a>
+                <a href="index.html"> Home Page </a>
+            </ol>
         </ul>
     </nav>
 </head>

@@ -91,34 +91,20 @@ h4 {
     background-size: cover;
 }*/
 
-
-ul {
-    display: inline;
-    list-style-type: none;
-    /* width: 300px; */
-    background-color: rgba(0, 0, 0, 0);
+nav {
     text-align: center;
-    justify-content: right;
+    justify-content: space-between;
+    width: auto;
+}
+
     
-    }
 
-    li a {
-    display: block;
-    color: rgb(0, 0, 0);
-    padding: 5px;
-    text-decoration: none;
-    background-color: rgb(255, 255, 255);
-    margin: 0px;
-    width: 300px;
-    justify-content: center;
-    }
-
-    /* Change the link color on hover */
-    li a:hover {
-    background-color: rgb(25, 255, 5);
-    color: rgb(0, 0, 0);
-    margin: 0;
-    }
+   /* Change the link color on hover */
+ol a:hover {
+background-color: rgb(25, 255, 5);
+color: rgb(0, 0, 0);
+margin: 0;
+}
 
 .hr {
     border: 3px solid red;
