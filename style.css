@@ -80,30 +80,25 @@ p {
 
 .w3 {
 
-    width: 100%
+    width: 100%;
 }
 
 h4 {
 
     width: 25%;
-    height: 25%;
+    height: 25%; 
 }
 
 
-/* body{ 
-    background: url("./cypresspics/IMG_0920.jpg") no-repeat center fixed;
-    background-size: cover;
-}*/
 
-
-
-ul {
-    display: inline;
+ ul {
+    display: flex;
     list-style-type: none;
-    /* width: 300px; */
     background-color: rgba(0, 0, 0, 0);
-    text-align: center;
+    text-align: 0;
     justify-content: right;
+    margin: 0 auto;
+    padding: 0;
     }
 
     li a {
