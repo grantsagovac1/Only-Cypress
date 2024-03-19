@@ -5,7 +5,7 @@
     font-family: sans-serif;
 }
 
-.ancient-growth-cypress-logging {
+.old-world-cypress-logging {
     display: flex;
     width: 33%;
     height: 33%;
@@ -14,13 +14,8 @@
     border-color: rgb(255, 0, 0);
 }
 
-#date-10-01-1949 {
-    width: 65%;
-    height: 65%
-}
-
 .photography-collection-cypress-flex-40-solid-2px-red-border-centered {
-    display: flex;
+    display: inline;
     width: 40%;
     height: 40%;
     border-style: solid;
