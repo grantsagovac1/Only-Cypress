@@ -23,7 +23,7 @@
     border-color: rgb(255, 0, 0);
     justify-content: center;
     align-items: center;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.2s ease-in-out;
 
 }
 
@@ -36,7 +36,11 @@
     width: 32%;
     height: 35%;
     border: 5px solid black;
+    transition: transform 0.2s ease-in-out;
+}
 
+.photography-collection-cypress-inline-35-5px-black-border:hover {
+    transform: scale(1.5);
 }
 
 h1 {
