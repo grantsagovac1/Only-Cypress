@@ -7,21 +7,28 @@
 
 .old-world-cypress-logging {
     display: flex;
-    width: 33%;
-    height: 33%;
+    width: 50%;
+    height: auto;
     border-style: solid;
-    border-width: 5px;
+    border-width: 2px;
     border-color: rgb(255, 0, 0);
 }
 
 .photography-collection-cypress-flex-40-solid-2px-red-border-centered {
-    display: inline;
-    width: 40%;
-    height: 40%;
+    display: flex;
+    width: 50%;
+    height: auto;
     border-style: solid;
     border-width: 2px;
     border-color: rgb(255, 0, 0);
     justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.photography-collection-cypress-flex-40-solid-2px-red-border-centered:hover {
+    transform: scale(1.5);
 }
 
 .photography-collection-cypress-inline-35-5px-black-border {
@@ -67,9 +74,10 @@ h5 {
 }
 
 p {
-    font-size: 15px;
+    font-size: 22px;
     text-align: center;
     font-family: 'Trebuchet MS', sans-serif, Arial, sans-serif;
+    font-weight: bold;
     
 }
 
@@ -120,4 +128,30 @@ h4 {
 
 .hr {
     border: 3px solid red;
+}
+
+#scroll-to-top-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#scroll-to-top-button:hover {
+    background-color: #555;
+}
+
+img {
+    /* display: block; */
+    width: 100%;
+    height: auto;
 }
