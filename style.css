@@ -1,161 +1,341 @@
+/* 
+ * OnlyCypress.com - Main Stylesheet
+ * Table of Contents:
+ * 1. CSS Variables (Custom Properties)
+ * 2. Reset and Global Styles
+ * 3. Typography
+ * 4. Layout Elements
+ * 5. Navigation
+ * 6. Components
+ * 7. Utilities
+ * 8. Media Queries
+ */
+
+/* 1. CSS Variables (Custom Properties) */
+:root {
+    /* Colors */
+    --primary-color: #2ecc71;
+    --primary-dark: #27ae60;
+    --text-color: #000000;
+    --heading-color: #024f9c;
+    --accent-color: #ff0000;
+    --background-color: #ffffff;
+    --white: #ffffff;
+    --black: #000000;
+    
+    /* Sizes */
+    --container-max-width: 1800px;
+    --content-max-width: 1200px;
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    
+    /* Typography */
+    --font-size-small: 0.9rem;
+    --font-size-base: 1.2rem;
+    --font-size-medium: 1.4rem;
+    --font-size-large: 1.5rem;
+    --font-size-xlarge: 2rem;
+    --font-size-xxlarge: 2.5rem;
+    
+    /* Border Radius */
+    --border-radius: 8px;
+    
+    /* Transition */
+    --transition-speed: 0.3s;
+}
+
+/* 2. Reset and Global Styles */
 * {
-    /* border: 3px solid black; */
-    margin: 3px auto;
-    padding: 0px auto;
-    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.old-world-cypress-logging {
-    display: flex;
-    width: 50%;
+/* Base Typography */
+body {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+img {
+    width: 100%;
     height: auto;
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgb(255, 0, 0);
 }
 
-.photography-collection-cypress-flex-40-solid-2px-red-border-centered {
-    display: flex;
-    width: 50%;
-    height: auto;
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgb(255, 0, 0);
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.2s ease-in-out;
-
-}
-
-.photography-collection-cypress-flex-40-solid-2px-red-border-centered:hover {
-    transform: scale(1.5);
-}
-
-.photography-collection-cypress-inline-35-5px-black-border {
-    display: inline;
-    width: 32%;
-    height: 35%;
-    border: 5px solid black;
-    transition: transform 0.2s ease-in-out;
-}
-
-.photography-collection-cypress-inline-35-5px-black-border:hover {
-    transform: scale(1.5);
+/* 3. Typography */
+/* Headings */
+h1, h2, h3, h5 {
+    text-align: center;
+    margin: var(--spacing-lg) 0;
 }
 
 h1 {
-    color: red;
-    font-size: 40px;
-    text-align: center;
-    background-color: black;
+    color: var(--accent-color);
+    font-size: var(--font-size-xxlarge);
+    font-weight: bold;
 }
 
-.home-page-image {
-    width: 100%;
-    height: 100%;
-}
 h2 {
-    color: red;
-    font-size: 55px;
-    text-align: center;
-    background-color: white;
-    text-decoration: bold;
-
+    color: var(--heading-color);
+    font-size: var(--font-size-xlarge);
+    padding-bottom: var(--spacing-xs);
+    border-bottom: 3px solid var(--primary-color);
+    margin-bottom: var(--spacing-sm);
 }
 
 h3 {
-    color: solid black;
-    font-size: 22px;
-    text-align: center;
-    background-color: rgb(0, 0, 0);
+    color: var(--text-color);
+    font-size: var(--font-size-large);
+    margin: var(--spacing-md) 0 var(--spacing-sm);
 }
 
 h5 {
     font-size: 22px;
-    text-align: center;
-    background-color: rgb(0, 0, 0);
-    width: auto;
+    background-color: var(--white);
+    width: 800px;
+    max-width: 100%;
+    color: var(--black);
+    margin-left: auto;
+    margin-right: auto;
 }
 
+h5 a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+h5 a:hover {
+    text-decoration: underline;
+    color: var(--primary-color);
+    background-color: transparent;
+}
+
+/* Text Elements */
 p {
-    font-size: 22px;
-    text-align: center;
-    font-family: 'Trebuchet MS', sans-serif, Arial, sans-serif;
+    margin: var(--spacing-md) auto;
+    color: #09aa4c;
+    font-size: var(--font-size-medium);
     font-weight: bold;
-    
+    text-align: center !important;
 }
 
-.w3 {
+strong {
+    color: var(--primary-color);
+}
 
+/* Lists */
+ul {
+    margin: var(--spacing-md) auto;
+    max-width: var(--content-max-width);
+}
+
+li {
+    margin-bottom: var(--spacing-xs);
+    color: var(--heading-color);
+    text-align: left;
+}
+
+/* 4. Layout Elements */
+hr {
+    margin: var(--spacing-lg) 0;
+    border: none;
+    border-top: 3px solid var(--primary-color);
+    width: 100%;
+    max-width: var(--container-max-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+br {
+    display: block;
+    margin: var(--spacing-sm) 0;
+}
+
+/* 5. Navigation */
+nav {
+    background-color: var(--white);
+    padding: var(--spacing-sm);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    max-width: var(--container-max-width);
     width: 100%;
 }
 
-h4 {
-
-    width: 25%;
-    height: 25%; 
+nav li {
+    text-align: left !important;
 }
 
-
-
- ul {
-    display: flex;
-    list-style-type: none;
-    background-color: rgba(0, 0, 0, 0);
-    text-align: 0;
-    justify-content: right;
-    margin: 0 auto;
-    padding: 0;
-    }
-
-    li a {
-    display: block;
-    color: rgb(0, 0, 0);
-    padding: 5px;
+nav a {
+    color: var(--text-color);
     text-decoration: none;
-    background-color: rgb(255, 255, 255);
-    margin: 0px auto;
-    width: 100% auto;
-    justify-content: center;
-    }
-
-    /* Change the link color on hover */
-    li a:hover {
-    background-color: rgb(25, 255, 5);
-    color: rgb(0, 0, 0);
-    margin: 0 auto;
-    width: auto;
-    font-weight: bold;
-    }
-
-
-
-.hr {
-    border: 3px solid red;
+    font-size: var(--font-size-base);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: 4px;
+    transition: all var(--transition-speed) ease;
+    white-space: nowrap;
 }
 
+nav a:hover {
+    color: var(--white);
+    background-color: var(--primary-color);
+}
+
+/* 6. Components */
+/* Photo Container */
+.photo-container {
+    margin: var(--spacing-lg) 0;
+    text-align: center;
+}
+
+.photo-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: var(--content-max-width);
+    margin: var(--spacing-lg) auto;
+    border-radius: var(--border-radius);
+    box-shadow: none;
+    transition: transform var(--transition-speed) ease;
+}
+
+.photo-container img:hover {
+    transform: scale(1.10);
+}
+
+.photo-container p {
+    text-align: center !important;
+    margin: var(--spacing-xs) 0;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.photo-container hr {
+    margin: var(--spacing-md) 0;
+    border: none;
+    border-top: 3px solid var(--primary-color);
+    width: 100%;
+    max-width: var(--container-max-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Scroll to Top Button */
 #scroll-to-top-button {
     display: none;
     position: fixed;
     bottom: 20px;
-    right: 30px;
+    right: 20px;
     z-index: 99;
-    font-size: 18px;
     border: none;
     outline: none;
-    background-color: red;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--white);
     cursor: pointer;
     padding: 15px;
-    border-radius: 4px;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: all var(--transition-speed) ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 #scroll-to-top-button:hover {
-    background-color: #555;
+    background-color: var(--primary-dark);
+    transform: translateY(-3px);
 }
 
-img {
-    /* display: block; */
-    width: 100%;
-    height: auto;
+/* 7. Utilities */
+.location-header {
+    font-size: var(--font-size-large);
+    margin-top: 3rem;
+    margin-bottom: var(--spacing-md);
 }
+
+/* 8. Media Queries */
+@media (max-width: 768px) {
+    nav {
+        width: 100%;
+        overflow-x: auto;
+    }
+    
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-start;
+        min-width: max-content;
+        gap: var(--spacing-sm);
+        padding: 0 var(--spacing-xs);
+    }
+    
+    nav a {
+        font-size: var(--font-size-small);
+        padding: 0.4rem 0.7rem;
+    }
+    
+    h1 {
+        font-size: var(--font-size-xlarge);
+    }
+    
+    h2 {
+        font-size: 1.7rem;
+    }
+    
+    p {
+        font-size: var(--font-size-base);
+    }
+    
+    .photo-container img {
+        margin: var(--spacing-sm) auto;
+    }
+    
+    h5 {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0 10px;
+    }
+    
+    nav a {
+        font-size: var(--font-size-small);
+        padding: 0.3rem 0.5rem;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: var(--font-size-large);
+    }
+    
+    p {
+        font-size: 1.1rem;
+    }
+    
+    .location-header {
+        font-size: var(--font-size-base);
+    }
+}
+

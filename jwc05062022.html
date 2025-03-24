@@ -4,28 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Location : J.W. Corbett , Palm Beach County, FL - Date : 05/06/2022</title>
+    <title>J.W Corbett, Palm Beach County, FL - Date: 05/06/2022</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
     <nav>
         <ul>
-            <li><a href="index.html"> Home Page </a></li>
-            <li><a href="PhotographyCollection.html"> Photography Collection </a></li>
-            <li><a href="OldGrowthCypressLoggingColor.html"> Old Growth Cypress Logging </a></li>
-            <li><a href="NaturesGarbageMan.html"> Natures' Garbage Man </a></li>
-            <li><a href="CypressTreeInformation.html"> Cypress Tree Facts & Information </a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="PhotographyCollection.html">Gallery</a></li>
+            <li><a href="OldGrowthCypressLoggingColor.html">Old Growth Logging</a></li>
+            <li><a href="NaturesGarbageMan.html">Nature's Garbage Man</a></li>
+            <li><a href="CypressTreeInformation.html">Cypress Facts</a></li>
         </ul>
     </nav>
-</head>
 
+    <button onclick="topFunction()" id="scroll-to-top-button" title="Go to top">Top</button>
+    
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("scroll-to-top-button");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
 
-<body>
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
 
-    <p>Location : J.W. Corbett , Palm Beach County, FL - Date : 05/06/2022</p><hr>
+        function topFunction(){
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 
-    <p>1</p><img src="./cypresspics/IMG_0267.jpg" class="photography-collection-cypress-flex-40-solid-2px-red-border-centered"><p>1</p><hr>
-    <p>2</p><img src="./cypresspics/IMG_0268.jpg" class="photography-collection-cypress-flex-40-solid-2px-red-border-centered"><p>2</p><hr>
-    <p>3</p><img src="./cypresspics/IMG_0269.jpg" class="photography-collection-cypress-flex-40-solid-2px-red-border-centered"><p>3</p><hr>
+    <p class="location-header">Location: J.W Corbett, Palm Beach County, FL - Date: 05/06/2022 (3 Pictures)</p>
+    <hr>
 
+    <div class="photo-container">
+        <p>1</p>
+        <img src="./cypresspics/IMG_0267.jpg">
+        <p>1</p>
+        <hr>
+    </div>
+    
+    <div class="photo-container">
+        <p>2</p>
+        <img src="./cypresspics/IMG_0268.jpg">
+        <p>2</p>
+        <hr>
+    </div>
+    
+    <div class="photo-container">
+        <p>3</p>
+        <img src="./cypresspics/IMG_0269.jpg">
+        <p>3</p>
+        <hr>
+    </div>
 </body>
 
 </html>

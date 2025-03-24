@@ -4,22 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Collection</title>
+    <meta name="description" content="Browse our extensive collection of cypress tree photographs from various locations in Florida, showcasing their unique beauty and ecosystem importance.">
+    <meta name="keywords" content="cypress tree photos, Florida cypress, swamp photography, wetland conservation, cypress gallery">
+    <meta name="author" content="OnlyCypress.com">
     <link rel="stylesheet" type="text/css" href="style.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Photography Collection</title>
+</head>
+<body>
     <nav>
         <ul>
-            <li><a href="index.html"> Home Page </a></li>
-            <li><a href="PhotographyCollection.html"> Photography Collection </a></li>
-            <li><a href="OldGrowthCypressLoggingColor.html"> Old Growth Cypress Logging </a></li>
-            <li><a href="NaturesGarbageMan.html"> Natures' Garbage Man </a></li>
-            <li><a href="CypressTreeInformation.html"> Cypress Tree Facts & Information </a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="PhotographyCollection.html">Gallery</a></li>
+            <li><a href="OldGrowthCypressLoggingColor.html">Old Growth Logging</a></li>
+            <li><a href="NaturesGarbageMan.html">Nature's Garbage Man</a></li>
+            <li><a href="CypressTreeInformation.html">Cypress Facts</a></li>
         </ul>
     </nav>
-</head>
-<br>
-<body>
-    <p> 
+    <button onclick="topFunction()" id="scroll-to-top-button" title="Go to top">Top</button>
+    
+    <script>
+
+        // Get the button
+        let mybutton = document.getElementById("scroll-to-top-button");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction(){
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
+    <p class="photography-collection-intro"> 
         Welcome to my collection of Cypress Tree pictures I took!<br><br>All of these photos here were taken by me at the date and location in the description. Unless indicated, 
         there are no duplicates of any cypress tree in a different area for different dates at the same location.<br><br>There may be the occasional Alligator or Pine Tree. Over 
         99% of the images will have cypress trees as the main subject.<br><br>I hope you enjoy looking through my collection as much as I enjoy going on walks through the swamp taking them!
@@ -27,14 +53,20 @@
     <br>
 
     <h1><b>About the locations &#129047;&#129047;&#129047;</b></h1><hr>
-    <br>
-
-
+    
     <h2><a href="https://myfwc.com/recreation/lead/j-w-corbett/" >J.W. Corbett , Palm Beach County, FL</a></h2>
+    
     <p>Tucked between the Gold Coast and Lake Okeechobee are 60,330 acres, open to a wide range of recreation.</p>
-    <img src="./cypressmaps/JWCorbetthandoutpic.jpg" class="photography-collection-cypress-inline-35-5px-black-border">
-    <img src="./cypresspics/IMG_0183.jpg" class="photography-collection-cypress-inline-35-5px-black-border">
-    <img src="./cypresspics/IMG_0390.jpg" class="photography-collection-cypress-inline-35-5px-black-border">
+    
+    <div class="photo-container">
+        <img src="./cypressmaps/JWCorbetthandoutpic.jpg">
+    </div>
+    <div class="photo-container">
+        <img src="./cypresspics/IMG_0183.jpg">
+    </div>
+    <div class="photo-container">
+        <img src="./cypresspics/IMG_0390.jpg">
+    </div>
 
 
     <p><b>NOTE: </b>These are the complete album and contain the full size of the images of my trips. Depending on your internet speed, the photos may take some time to load.</p>
@@ -48,8 +80,7 @@
     <h5><a href="jwc04242022.html"> 8 : J.W. Corbett, Palm Beach County, FL - Date : 04/24/2022 (15 Pictures) </a></h5>
     <h5><a href="jwc05062022.html"> 9 : J.W. Corbett, Palm Beach County, FL - Date : 05/06/2022 (3 Pictures) </a></h5>
     <h5><a href="jwc05272022.html"> 10 : J.W. Corbett, Palm Beach County, FL - Date : 05/27/2022 (161 Pictures) </a></h5>
-    <h5><a href="jwc01152023.html"> 11 : J.W. Corbett, Palm Beach County, FL - Date : 01/15/2023 (15 Pictures) </a></h5>
-    <h5><a href="jwc01202023.html"> 12 : J.W. Corbett, Palm Beach County, FL - Date : 01/20/2023 (85 Pictures) </a></h5>
+
     
     <br>
     <hr>
@@ -58,12 +89,16 @@
 
     <h2><a href="https://corkscrew.audubon.org/" >Audubon Corkscrew Swamp Sanctuary, Naples, FL</a></h2>
         
-    <p>Visitors will find a gentle, pristine wilderness that dates back about 600 years. A 2.25-mile boardwalk meanders through pine flatwood, wet prairie, around a marsh, and finally into the largest old-growth bald cypress forest in North America. These impressive trees, relatives of the redwood, tower 130 feet into the sky and have a girth of 25 feet. Their massive branches are draped with mosses, lichens, bromeliads, and ferns. The forest is also home to hundreds of alligators, otters, white-tailed deer, and red-bellied turtles. A wide variety of wading birds, songbirds, and raptors can be seen throughout the year, while the fabulous Painted Bunting is one of many winter visitors. Photo opportunities are available at every turn of the boardwalk trail.<br><br>
-    The story of how Corkscrew Swamp became a sanctuary is one of the important conservation successes of our time. National Audubon began protecting the wading birds nesting within Corkscrew Swamp in 1905. During the 1940s and '50s, cypress forests in Florida were being leveled for their timber. Audubon realized the forest must be saved. At the time, Corkscrew was isolated and almost impossible to access. Today it is an oasis in a made-over landscape. In other areas, many of the wild swamps and much of the teeming wildlife that was characteristic of this region less than a generation ago are gone. Corkscrew Swamp Sanctuary's value thus becomes more significant with every passing year. Your visit and admission fees help us preserve it for generations to come.<br><br>
-    The natural biological systems, which expand over 13,000 acres at Corkscrew are maintained through land management practices to sustain native plants and animals found here and to preserve the natural processes that have been occurring for thousands of years.</p>
-    <img src="./cypressmaps/inkedboardwalk-map-plus-plus.gif" class="photography-collection-cypress-inline-35-5px-black-border">    
-    <img src="./cypresspics/IMG_6022.jpg" class="photography-collection-cypress-inline-35-5px-black-border">
-    <img src="./cypresspics/IMG_5954.jpg" class="photography-collection-cypress-inline-35-5px-black-border">
+    <p>Visitors will find a gentle, pristine wilderness that dates back about 600 years. A 2.25-mile boardwalk meanders through pine flatwood, wet prairie, around a marsh, and finally into the largest old-growth bald cypress forest in North America. These impressive trees, relatives of the redwood, tower 130 feet into the sky and have a girth of 25 feet. Their massive branches are draped with mosses, lichens, bromeliads, and ferns. The forest is also home to hundreds of alligators, otters, white-tailed deer, and red-bellied turtles. A wide variety of wading birds, songbirds, and raptors can be seen throughout the year, while the fabulous Painted Bunting is one of many winter visitors. Photo opportunities are available at every turn of the boardwalk trail.<br><br>The story of how Corkscrew Swamp became a sanctuary is one of the important conservation successes of our time. National Audubon began protecting the wading birds nesting within Corkscrew Swamp in 1905. During the 1940s and '50s, cypress forests in Florida were being leveled for their timber. Audubon realized the forest must be saved. At the time, Corkscrew was isolated and almost impossible to access. Today it is an oasis in a made-over landscape. In other areas, many of the wild swamps and much of the teeming wildlife that was characteristic of this region less than a generation ago are gone. Corkscrew Swamp Sanctuary's value thus becomes more significant with every passing year. Your visit and admission fees help us preserve it for generations to come.<br><br> The natural biological systems, which expand over 13,000 acres at Corkscrew are maintained through land management practices to sustain native plants and animals found here and to preserve the natural processes that have been occurring for thousands of years.</p>
+    <div class="photo-container">
+        <img src="./cypressmaps/inkedboardwalk-map-plus-plus.gif">
+    </div>
+    <div class="photo-container">
+        <img src="./cypresspics/IMG_6022.jpg">
+    </div>
+    <div class="photo-container">
+        <img src="./cypresspics/IMG_5954.jpg">
+    </div>
     <br>
 
 
@@ -72,18 +107,30 @@
     <hr>
     <h2><a href="https://crewtrust.org/bird-rookery-swamp-trail/" >CREW Bird Rookery Swamp Trails, Naples, FL</a></h2>
     <p>The Bird Rookery Swamp Trail officially opened in July 2011. The Bird Rookery Swamp Trail offers 12 miles of hiking and biking trails, including a 1500-ft. boardwalk with wheelchair accessibility. A 1/4-mile crushed shell path leads to a 1500-ft. boardwalk, then the trails become ground level, sandy/grassy, relatively flat berms with swamp on both sides. The trails are actually old tram roads used when the area was logged many years ago. Biking can be a challenge on the grassy/sandy trails, but quite rewarding. The maple-cypress swamp is home to alligators, otters, Florida panthers, bobcats, white-tailed deer and more. There is one portable toilet at the beginning of the boardwalk and several benches along the trail within the first 1.5 miles. Beyond that there are no structures.</p>
-    <img src="./cypressmaps/BRS-Trail-Map-2-Sided-Dec-20-2021_Page_1.png" class="photography-collection-cypress-inline-35-5px-black-border">
-    <img src="./cypresspics/IMG_6302.jpg" class="photography-collection-cypress-inline-35-5px-black-border">
-    <img src="./cypresspics/IMG_6508.jpg" class="photography-collection-cypress-inline-35-5px-black-border">
+    <div class="photo-container">
+        <img src="./cypressmaps/BRS-Trail-Map-2-Sided-Dec-20-2021_Page_1.png">
+    </div>
+    <div class="photo-container">
+        <img src="./cypresspics/IMG_6302.jpg">
+    </div>
+    <div class="photo-container">
+        <img src="./cypresspics/IMG_6508.jpg">
+    </div>
 
 
     <h5><a href="crewbrswt04082022.html"> 1 :  CREW Bird Rookery Swamp Trails, Naples FL - Date: 4/8/2022 (497 Pictures)</a></h5><br>
     <hr>
     <h2><a href="https://www.wellingtonfl.gov/Facilities/Facility/Details/Pine-Valley-Preserve-20" >Pine Valley Preserve, Wellington, FL</a></h2>
     <p>Located in Wellington, this preserve is complete with the remnants of Cypress Trees and swamp land that once dominated the landscape in Wellington Florida.</p>
-    <img src="./cypresspics/IMG_8353.jpg" class="photography-collection-cypress-inline-35-5px-black-border">
-    <img src="./cypresspics/IMG_8361.jpg" class="photography-collection-cypress-inline-35-5px-black-border">
-    <img src="/cypresspics/IMG_8364.jpg" class="photography-collection-cypress-inline-35-5px-black-border">
+    <div class="photo-container">
+        <img src="./cypresspics/IMG_8353.jpg" loading="lazy" alt="Cypress trees at Pine Valley Preserve">
+    </div>
+    <div class="photo-container">
+        <img src="./cypresspics/IMG_8361.jpg" loading="lazy" alt="Cypress trees at Pine Valley Preserve">
+    </div>
+    <div class="photo-container">
+        <img src="./cypresspics/IMG_8364.jpg" loading="lazy" alt="Cypress trees at Pine Valley Preserve">
+    </div>
     <h2></h2>
 
 
@@ -91,9 +138,15 @@
     <hr>
     <h2><a href="http://www.holopawfl.com/" >Suburban Estates, Holopaw FL</a></h2>
     <p>Suburban estates is a 10,000 acre private property recreation area. It is surrounded by Cypress swamps and citrus fields.</p>
-    <img src="./cypresspics/IMG_0548 (2).jpg" class="photography-collection-cypress-inline-35-5px-black-border">
-    <img src="./cypresspics/IMG_0547 (2).jpg" class="photography-collection-cypress-inline-35-5px-black-border">
-    <img src="/cypresspics/IMG_0528.jpg" class="photography-collection-cypress-inline-35-5px-black-border">
+    <div class="photo-container">
+        <img src="./cypresspics/IMG_0548 (2).jpg" loading="lazy" alt="Cypress trees at Suburban Estates">
+    </div>
+    <div class="photo-container">
+        <img src="./cypresspics/IMG_0547 (2).jpg" loading="lazy" alt="Cypress trees at Suburban Estates">
+    </div>
+    <div class="photo-container">
+        <img src="./cypresspics/IMG_0528.jpg" loading="lazy" alt="Cypress trees at Suburban Estates">
+    </div>
     <h2></h2>
 
     

@@ -4,35 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suburban Estates, Holopaw FL - Date : 06/6/2023</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Suburban Estates, Holopaw FL - Date: 06/06/2023</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
     <nav>
         <ul>
-            <li><a href="index.html"> Home Page </a></li>
-            <li><a href="PhotographyCollection.html"> Photography Collection </a></li>
-            <li><a href="OldGrowthCypressLoggingColor.html"> Old Growth Cypress Logging </a></li>
-            <li><a href="NaturesGarbageMan.html"> Natures' Garbage Man </a></li>
-            <li><a href="CypressTreeInformation.html"> Cypress Tree Facts & Information </a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="PhotographyCollection.html">Gallery</a></li>
+            <li><a href="OldGrowthCypressLoggingBW.html">Old Growth Logging</a></li>
+            <li><a href="NaturesGarbageMan.html">Nature's Garbage Man</a></li>
+            <li><a href="CypressTreeInformation.html">Cypress Facts</a></li>
         </ul>
     </nav>
-</head>
 
+    <button onclick="topFunction()" id="scroll-to-top-button" title="Go to top">Top</button>
+    
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("scroll-to-top-button");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
 
-<body>
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
 
-    <p>Location: Suburban Estates, Holopaw FL - Date : 06/6/2023</p><hr>
+        function topFunction(){
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 
+    <p class="location-header">Location: Suburban Estates, Holopaw FL - Date: 06/06/2023</p>
+    <hr>
 
-    <p>1</p><img src="./cypresspics/IMG_0528.jpg" class="photography-collection-cypress-flex-40-solid-2px-red-border-centered"><p>1</p><hr>
-    <p>2</p><img src="./cypresspics/IMG_0530 (2).jpg" class="photography-collection-cypress-flex-40-solid-2px-red-border-centered"><p>2</p><hr>
-    <p>3</p><img src="./cypresspics/IMG_0531 (2).jpg" class="photography-collection-cypress-flex-40-solid-2px-red-border-centered"><p>3</p><hr>
-    <p>4</p><img src="./cypresspics/IMG_0539 (2).jpg" class="photography-collection-cypress-flex-40-solid-2px-red-border-centered"><p>4</p><hr>
-    <p>5</p><img src="./cypresspics/IMG_0540 (2).jpg" class="photography-collection-cypress-flex-40-solid-2px-red-border-centered"><p>5</p><hr>
-    <p>6</p><img src="./cypresspics/IMG_0543 (2).jpg" class="photography-collection-cypress-flex-40-solid-2px-red-border-centered"><p>6</p><hr>
-    <p>7</p><img src="./cypresspics/IMG_0544 (2).jpg" class="photography-collection-cypress-flex-40-solid-2px-red-border-centered"><p>7</p><hr>
-    <p>8</p><img src="./cypresspics/IMG_0545 (2).jpg" class="photography-collection-cypress-flex-40-solid-2px-red-border-centered"><p>8</p><hr>
-    <p>9</p><img src="./cypresspics/IMG_0547 (2).jpg" class="photography-collection-cypress-flex-40-solid-2px-red-border-centered"><p>9</p><hr>
-    <p>10</p><img src="./cypresspics/IMG_0548 (2).jpg" class="photography-collection-cypress-flex-40-solid-2px-red-border-centered"><p>10</p><hr>
+    <p>1</p><img src="./cypresspics/IMG_0528.jpg"><p>1</p><hr>
+    <p>2</p><img src="./cypresspics/IMG_0530 (2).jpg"><p>2</p><hr>
+    <p>3</p><img src="./cypresspics/IMG_0531 (2).jpg"><p>3</p><hr>
+    <p>4</p><img src="./cypresspics/IMG_0539 (2).jpg"><p>4</p><hr>
+    <p>5</p><img src="./cypresspics/IMG_0540 (2).jpg"><p>5</p><hr>
+    <p>6</p><img src="./cypresspics/IMG_0543 (2).jpg"><p>6</p><hr>
+    <p>7</p><img src="./cypresspics/IMG_0544 (2).jpg"><p>7</p><hr>
+    <p>8</p><img src="./cypresspics/IMG_0545 (2).jpg"><p>8</p><hr>
+    <p>9</p><img src="./cypresspics/IMG_0547 (2).jpg"><p>9</p><hr>
+    <p>10</p><img src="./cypresspics/IMG_0548 (2).jpg"><p>10</p><hr>
 
 </body>
 

@@ -5,44 +5,181 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Cypress Tree Information</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <title>Cypress Tree Facts & Information</title>
+</head>
+<body>
     <nav>
         <ul>
-            <li><a href="index.html"> Home Page </a></li>
-            <li><a href="PhotographyCollection.html"> Photography Collection </a></li>
-            <li><a href="OldGrowthCypressLoggingColor.html"> Old Growth Cypress Logging </a></li>
-            <li><a href="NaturesGarbageMan.html"> Natures' Garbage Man </a></li>
-            <li><a href="CypressTreeInformation.html"> Cypress Tree Facts & Information </a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="PhotographyCollection.html">Gallery</a></li>
+            <li><a href="OldGrowthCypressLoggingColor.html">Old Growth Logging</a></li>
+            <li><a href="NaturesGarbageMan.html">Nature's Garbage Man</a></li>
+            <li><a href="CypressTreeInformation.html">Cypress Facts</a></li>
         </ul>
     </nav>
-</head>
-<br>
 
-<body>
-    <p>Found throughout the world, with species native to almost every continent, Cypress Trees are a beautiful, and versatile tree. There are over 25 genera and almost 130 species. The many different types of Cypress trees around the world are well adapted to any spot, climate, and habitat.</p>
-    <h2> American Cypress Trees (Bald cypress, Red cypress, Yellow cypress, Southern cypress)</h2>
-    <p>Cypress trees are conifers, but unlike most American softwoods, they are deciduous trees that shed foliage in the fall like hardwoods. Although cypress is a softwood, it grows alongside hardwoods and is traditionally grouped and manufactured with hardwoods.</p>
-    <p>Most cypress trees are natives of the South and grow in the Atlantic and Gulf Coastal Plains from Delaware to Texas, as well as in the Mississippi Valley from the Louisiana Delta to southern Indiana.</p>
-    <p>Cypress roots love water. Some trees growing on wet sites develop what are called cypress “knees” or pneumatophores. The knee-like upright growths come from the roots, helping to support the tree and also to aerate the waterlogged root system. The wood from the knees is soft and light and can be used to makes vases and novelty items.</p>
+    <button onclick="topFunction()" id="scroll-to-top-button" title="Go to top">Top</button>
+    
+    <script>
+        let mybutton = document.getElementById("scroll-to-top-button");
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction(){
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <h1>Ultimate Guide to Cypress Trees</h1>
+    <p>Cypress trees are among the most fascinating and resilient trees in the world, known for their beauty, durability, and ecological significance. Whether you're interested in their history, uses, or conservation, this guide covers everything you need to know about these remarkable conifers.</p>
+
+    <!-- Gallery Section -->
+    <div class="gallery-section">
+        <h2>Cypress Tree Gallery</h2>
+        <div class="gallery-grid">
+            <!-- Add your images here -->
+            <div class="gallery-item">
+                <img src="images/cypress1.jpg" alt="Majestic Cypress Tree">
+                <div class="gallery-caption">Majestic Cypress Tree in Natural Habitat</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/cypress2.jpg" alt="Cypress Swamp">
+                <div class="gallery-caption">Beautiful Cypress Swamp Landscape</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/cypress3.jpg" alt="Cypress Knees">
+                <div class="gallery-caption">Fascinating Cypress Knees</div>
+            </div>
+            <!-- Add more gallery items as needed -->
+        </div>
+    </div>
+
+    <h2>What Are Cypress Trees?</h2>
+    <p>Cypress trees belong to the Cupressaceae family, which includes both evergreen and deciduous species. They thrive in a variety of environments, from swamps to dry, rocky landscapes. Many species are prized for their rot-resistant wood, while others are valued for their ornamental appeal. They are commonly found in North America, Europe, Asia, and parts of Africa and Australia.</p>
+
+    <h2>Types of Cypress Trees</h2>
+    <h3>1. True Cypress (Genus: Cupressus)</h3>
+    <ul>
+        <li><strong>Mediterranean Cypress</strong> (Cupressus sempervirens) – A classic tall, columnar tree found in Southern Europe and the Middle East. It is often associated with classical landscapes and cemeteries.</li>
+        <li><strong>Monterey Cypress</strong> (Cupressus macrocarpa) – Native to the California coast, known for its striking windswept shapes and resilience against salty ocean winds.</li>
+        <li><strong>Arizona Cypress</strong> (Cupressus arizonica) – Found in the southwestern U.S., recognized for its bluish-green foliage and adaptability to dry climates.</li>
+        <li><strong>Chinese Weeping Cypress</strong> (Cupressus funebris) – Native to China, with drooping branches and an elegant form used in temple gardens.</li>
+        <li><strong>Tibetan Cypress</strong> (Cupressus gigantea) – The tallest true cypress species, found in high-altitude regions of Tibet.</li>
+    </ul>
+
+    <h3>2. Bald Cypress (Genus: Taxodium)</h3>
+    <ul>
+        <li><strong>Bald Cypress</strong> (Taxodium distichum) – A deciduous conifer native to southeastern U.S. wetlands, known for its unique "knees" that protrude from water to help with oxygen intake.</li>
+        <li><strong>Pond Cypress</strong> (Taxodium ascendens) – A close relative of the bald cypress, growing in isolated ponds and slow-moving waters. It has a more compact form and fine-textured foliage.</li>
+        <li><strong>Montezuema Cypress</strong> (Taxodium mucronatum) – Native to Mexico, also known as the Ahuehuete tree. It is one of the largest tree species in the world by trunk diameter.</li>
+    </ul>
+
+    <h3>3. False Cypress (Genus: Chamaecyparis)</h3>
+    <ul>
+        <li><strong>Hinoki Cypress</strong> (Chamaecyparis obtusa) – A slow-growing Japanese species often used in bonsai and landscaping. Its wood is highly valued for temple construction.</li>
+        <li><strong>Lawson Cypress</strong> (Chamaecyparis lawsoniana) – Native to the Pacific Northwest, widely used for timber and ornamental purposes. Some cultivars are at risk due to a fungal disease called Phytophthora lateralis.</li>
+        <li><strong>Nootka Cypress</strong> (Chamaecyparis nootkatensis) – Found in North America's coastal rainforests, this tree is often cultivated for its ornamental weeping form.</li>
+    </ul>
+
+    <h2>Where Do Cypress Trees Grow?</h2>
+    <p>Cypress trees are highly adaptable and can be found in different environments:</p>
+    <ul>
+        <li><strong>Wetlands and Swamps</strong> – Bald cypress thrives in flooded areas, providing habitat for diverse wildlife.</li>
+        <li><strong>Dry, Rocky Soils</strong> – Arizona cypress and Mediterranean cypress prefer well-drained soils in arid or semi-arid regions.</li>
+        <li><strong>Mountainous Regions</strong> – Some species, such as the Tibetan cypress, grow at high altitudes where conditions can be extreme.</li>
+        <li><strong>Coastal Areas</strong> – Monterey cypress and Nootka cypress tolerate salty winds and thrive along coastlines.</li>
+    </ul>
+
+    <h2>Key Features of Cypress Trees</h2>
+    <ul>
+        <li><strong>Leaves:</strong> Scale-like or needle-like, depending on the species, with shades of green, blue-green, or golden.</li>
+        <li><strong>Bark:</strong> Often fibrous or scaly, ranging in color from gray to reddish-brown, with some species exhibiting a peeling characteristic.</li>
+        <li><strong>Cones:</strong> Small and woody, containing seeds that are dispersed by wind, water, or animals.</li>
+        <li><strong>Roots:</strong> Some species, like the bald cypress, develop unique root structures called "knees," which help stabilize the tree in wetlands.</li>
+    </ul>
+
+    <h2>Why Are Cypress Trees Important?</h2>
+    <h3>1. Environmental Benefits</h3>
+    <ul>
+        <li><strong>Habitat for Wildlife</strong> – Cypress forests support birds, amphibians, and aquatic species.</li>
+        <li><strong>Erosion Control</strong> – Their deep roots stabilize riverbanks and prevent soil loss.</li>
+        <li><strong>Water Purification</strong> – Wetland species filter out pollutants, improving water quality.</li>
+        <li><strong>Carbon Sequestration</strong> – Cypress trees help absorb carbon dioxide, reducing greenhouse gases.</li>
+    </ul>
+
+    <h3>2. Uses of Cypress Wood</h3>
+    <ul>
+        <li><strong>Construction</strong> – Highly resistant to decay, making it ideal for outdoor structures, bridges, and decks.</li>
+        <li><strong>Boat Building</strong> – Used historically in ship construction due to its water resistance.</li>
+        <li><strong>Furniture and Interior Design</strong> – Prized for its rich grain and durability.</li>
+        <li><strong>Coffins and Temples</strong> – In some cultures, cypress wood is sacred and used in religious structures.</li>
+    </ul>
+
+    <h3>3. Landscaping & Ornamental Value</h3>
+    <ul>
+        <li><strong>Windbreaks and Privacy Screens</strong> – Planted for shelter and aesthetic appeal.</li>
+        <li><strong>Symbolism</strong> – Mediterranean cypress is associated with mourning and immortality.</li>
+        <li><strong>Topiary and Bonsai</strong> – Some species are used for intricate pruning and shaping.</li>
+    </ul>
+
+    <h3>4. Medicinal & Aromatic Uses</h3>
+    <ul>
+        <li><strong>Essential Oils</strong> – Used for relaxation and anti-inflammatory benefits.</li>
+        <li><strong>Traditional Medicine</strong> – Some cultures use cypress bark and leaves for treating ailments.</li>
+    </ul>
+
+    <h2>Conservation & Threats</h2>
+    <p>Certain cypress species are at risk due to:</p>
+    <ul>
+        <li><strong>Deforestation</strong> – Loss of wetland habitats threatens species like the bald cypress.</li>
+        <li><strong>Diseases and Pests</strong> – Fungal infections, such as Phytophthora, impact Lawson cypress.</li>
+        <li><strong>Overharvesting</strong> – High demand for durable wood has led to population declines.</li>
+        <li><strong>Climate Change</strong> – Rising temperatures and changes in rainfall affect natural growth patterns.</li>
+    </ul>
+
+    <h3>Conservation Efforts Include:</h3>
+    <ul>
+        <li>Reforestation projects to restore lost cypress habitats.</li>
+        <li>Disease-resistant breeding programs.</li>
+        <li>Legal protections for endangered species.</li>
+        <li>Sustainable forestry management.</li>
+    </ul>
+
+    <h2>How to Grow Cypress Trees</h2>
+    <ul>
+        <li><strong>Sunlight</strong> – Most species require full sun to thrive.</li>
+        <li><strong>Soil Conditions</strong> – Adaptable, but prefer well-draining soil. Bald cypress tolerates wet conditions.</li>
+        <li><strong>Watering</strong> – Newly planted trees need regular watering, while mature trees are drought-tolerant.</li>
+        <li><strong>Propagation</strong> – Can be grown from seeds or cuttings, depending on the species.</li>
+        <li><strong>Pruning</strong> – Typically requires little maintenance, but shaping can enhance ornamental varieties.</li>
+    </ul>
+
+    <h2>Historical and Cultural Significance</h2>
+    <ul>
+        <li><strong>Ancient Egypt</strong> – Cypress wood was used for making sarcophagi and temple doors.</li>
+        <li><strong>Greek and Roman Mythology</strong> – Associated with the god of the underworld and used as a symbol of mourning.</li>
+        <li><strong>Japanese Architecture</strong> – Hinoki cypress is used in traditional temples and shrines.</li>
+        <li><strong>American Swamps</strong> – Bald cypress trees have stood for centuries, witnessing the evolution of wetlands and river systems.</li>
+    </ul>
+
+    
+    <div class="Bald-Cypress">
+        <h2>Bald Cypress (Taxodium distichum)</h2>
+        <p>Taxodium distichum is a large, slow-growing, and long-lived tree. It typically grows to heights of 35–120 feet (10–40 m) and has a trunk diameter of 3–7 feet (0.9–2.1 m). <br> The main trunk is often surrounded by cypress knees. The bark is grayish brown to reddish brown, thin, and fibrous with a stringy texture; it has a vertically, interwoven pattern of shallow ridges and narrow furrows. <br>The needle-like leaves are 1⁄2 to 3⁄4 inch (1.3 to 1.9 cm) long and are simple, alternate, green, and linear, with entire margins. In autumn, the leaves turn yellow or copper red.<br> The bald cypress drops its needles each winter and then grows a new set in spring.<br> This species is monoecious, with male and female cones on a single plant forming on slender, tassel-like structures near the edge of branchlets. The tree produces cones in April and the seeds ripen in October. The male and female strobili are produced from buds formed in late autumn, with pollination in early winter, and mature in about 12 months. Male cones emerge on panicles that are 4–5 inches (10–13 cm) inches long. Female cones are round, resinous and green while young. They then turn hard and then brown as the tree matures. They are globular and 2.0–3.5 cm (3⁄4–1+3⁄8 in) in diameter. They have from 20 to 30 spirally arranged, four-sided scales, each bearing one, two, or rarely three triangular seeds. Each cone contains 20 to 40 large seeds. The cones disintegrate at maturity to release the seeds. The seeds are 5–10 mm (3⁄16–13⁄32 in) long, the largest of any species of Cupressaceae, and are produced every year, with heavy crops every 3–5 years. The seedlings have three to nine, but usually six, cotyledons each. <br> The bald cypress grows in full sunlight to partial shade. This species grows best in wet or well-drained soil but can tolerate dry soil. It is moderately able to grow in aerosols of salt water. It does well in acid, neutral and alkaline soils across the full range of light (sandy), medium (loamy), and heavy (clay) soils. It can also grow in saline soils. It can tolerate atmospheric pollution. The cones are often consumed by wildlife.</p>
+
+        <h2>Champion Cypress Trees</h2>
+        <p>The tallest known specimen, near Williamsburg, Virginia, is 44.11 m (145 ft) tall, and the stoutest known, in the Real County near Leakey, Texas, has a circumference of 475 in (39 ft).[6] The National Champion Bald Cypress is recognized as the largest member of its species in the country and is listed as such on the National Register of Champion Trees by American Forest. The National Champion Bald Cypress is in the Cat Island Nation Wildlife Refuge, near St. Francisville, Louisiana, and it is 96 feet (29 m) tall, 56 feet (17 m) in circumference, and is estimated to be approximately 1,500 years old. The oldest known living specimen, found along the Black River in North Carolina, is at least 2,624 years old, rendering it the oldest living tree in eastern North America.</p>
+        <p>"Big Dan" is one of the oldest living specimens and is found near High Springs, Florida at Camp Kulaqua. It is estimated to be 2,704 years old as of 2020. It is growing in the Hornsby Spring swamp run and is more than 35 feet in circumference.</p>
+        <p>The Senator, a bald cypress in Longwood, Florida, was 165 feet (50 m) tall before the hurricane of 1925, when it lost about 40 feet (12 m) in height. It had a circumference of 47 feet (14 m) and a diameter of 17.5 feet (5.3 m) and was estimated to be 3,500 years old. It was burned down accidentally in 2012.</p>
+    </div>
 </body>
-
-<div class="Bald-Cypress">
-    <h2>Bald Cypress (Taxodium distichum) </h2>
-    <p>Taxodium distichum is a large, slow-growing, and long-lived tree. It typically grows to heights of 35–120 feet (10–40 m) and has a trunk diameter of 3–7 feet (0.9–2.1 m). <br> The main trunk is often surrounded by cypress knees. The bark is grayish brown to reddish brown, thin, and fibrous with a stringy texture; it has a vertically, interwoven pattern of shallow ridges and narrow furrows. <br>The needle-like leaves are 1⁄2 to 3⁄4 inch (1.3 to 1.9 cm) long and are simple, alternate, green, and linear, with entire margins. In autumn, the leaves turn yellow or copper red.<br> The bald cypress drops its needles each winter and then grows a new set in spring.<br> This species is monoecious, with male and female cones on a single plant forming on slender, tassel-like structures near the edge of branchlets. The tree produces cones in April and the seeds ripen in October. The male and female strobili are produced from buds formed in late autumn, with pollination in early winter, and mature in about 12 months. Male cones emerge on panicles that are 4–5 inches (10–13 cm) inches long. Female cones are round, resinous and green while young. They then turn hard and then brown as the tree matures. They are globular and 2.0–3.5 cm (3⁄4–1+3⁄8 in) in diameter. They have from 20 to 30 spirally arranged, four-sided scales, each bearing one, two, or rarely three triangular seeds. Each cone contains 20 to 40 large seeds. The cones disintegrate at maturity to release the seeds. The seeds are 5–10 mm (3⁄16–13⁄32 in) long, the largest of any species of Cupressaceae, and are produced every year, with heavy crops every 3–5 years. The seedlings have three to nine, but usually six, cotyledons each. <br> The bald cypress grows in full sunlight to partial shade. This species grows best in wet or well-drained soil but can tolerate dry soil. It is moderately able to grow in aerosols of salt water. It does well in acid, neutral and alkaline soils across the full range of light (sandy), medium (loamy), and heavy (clay) soils. It can also grow in saline soils. It can tolerate atmospheric pollution. The cones are often consumed by wildlife. <br><br> 
-        
-        </p>
-
-    <h2> 
-        Champion Cypress Trees
-    </h2>
-        <br>
-    <p> 
-        The tallest known specimen, near Williamsburg, Virginia, is 44.11 m (145 ft) tall, and the stoutest known, in the Real County near Leakey, Texas, has a circumference of 475 in (39 ft).[6] The National Champion Bald Cypress is recognized as the largest member of its species in the country and is listed as such on the National Register of Champion Trees by American Forest. The National Champion Bald Cypress is in the Cat Island Nation Wildlife Refuge, near St. Francisville, Louisiana, and it is 96 feet (29 m) tall, 56 feet (17 m) in circumference, and is estimated to be approximately 1,500 years old. The oldest known living specimen, found along the Black River in North Carolina, is at least 2,624 years old, rendering it the oldest living tree in eastern North America.
-        <br>
-        "Big Dan" is one of the oldest living specimens and is found near High Springs, Florida at Camp Kulaqua. It is estimated to be 2,704 years old as of 2020. It is growing in the Hornsby Spring swamp run and is more than 35 feet in circumference.
-        <br>
-        The Senator, a bald cypress in Longwood, Florida, was 165 feet (50 m) tall before the hurricane of 1925, when it lost about 40 feet (12 m) in height. It had a circumference of 47 feet (14 m) and a diameter of 17.5 feet (5.3 m) and was estimated to be 3,500 years old. It was burned down accidentally in 2012.
-    </p>
-</div>
-
 </html>
